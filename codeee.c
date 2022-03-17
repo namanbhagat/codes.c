@@ -4,7 +4,7 @@
 int main()
 {
     char a[20], c;
-
+    printf("naman\n");
     printf("enter the string");
     gets(a);
     c = *a;
