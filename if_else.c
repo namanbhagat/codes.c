@@ -3,7 +3,7 @@
 int main()
 {
     int Age;
-    printf("siddhant\n");
+    printf("naman\n");
     printf("Enter your age:");
     scanf("%d", &Age);
     if (Age >= 18)
