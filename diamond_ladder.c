@@ -3,7 +3,7 @@
 int main()
 {
     int number, i, k, count = 1;
- 
+    printf("naman\n");
     printf("Enter number of rows\n");
     scanf("%d", &number);
     count = number - 1;
