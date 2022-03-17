@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    printf("siddhant\n");
+    printf("naman\n");
     char c;
     printf("Enter a character: ");
     scanf("%c",&c);
