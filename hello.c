@@ -1,7 +1,7 @@
 #include<stdio.h>
 void main()
 {
-    printf("siddhant\n");
+    printf("naman\n");
     printf("hello");
 
 }
