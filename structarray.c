@@ -9,13 +9,13 @@ int main(){
    int i;
    struct student record[2];
    record[0].id=1;
-   strcpy(record[0].name, "om");
+   strcpy(record[0].name, "peter");
    record[0].percentage = 81.5;
    record[1].id=2;
-   strcpy(record[1].name, "rahul");
+   strcpy(record[1].name, "rohit");
    record[1].percentage = 94.5;
    record[2].id=3;
-   strcpy(record[2].name, "Harry");
+   strcpy(record[2].name, "gauge");
    record[2].percentage = 89.5;
    for(i=0; i<3; i++){
       printf(" Records of STUDENT : %d \n", i+1);
