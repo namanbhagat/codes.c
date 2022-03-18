@@ -2,7 +2,7 @@
 int main()
  {
     int n, rev = 0, remainder;
-    printf("SIDDHANT\n");
+    printf("naman\n");
     printf("Enter an integer: ");
     scanf("%d", &n);
     while (n != 0) {
