@@ -1,18 +1,14 @@
 #include <stdio.h>
-int main()
-{
-    int i,j,lines;
-    char ch='A';
-    printf("siddhant\n");
-    printf("Enter the no. of lines");
-    scanf("%d",&lines);
-    for(i=1;i<=lines;i++)
-    {
-        for(j=1;j<=i;j++)
-        {
-            printf("%c ",ch++);
-        }
-        printf("\n");
-    }
-    return 0;
+int main() {
+   int i, j, rows;
+   printf("naman\n");
+   printf("Enter the number of rows: ");
+   scanf("%d", &rows);
+   for (i = 1; i <= rows; ++i) {
+      for (j = 1; j <= i; ++j) {
+         printf("%d ", j);
+      }
+      printf("\n");
+   }
+   return 0;
 }
