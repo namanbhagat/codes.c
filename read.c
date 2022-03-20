@@ -1,19 +1,19 @@
-#include<stdio.h>
-#include<conio.h>
-int main()
-{
-    int x,y;
-    printf("siddhant\n");
-    printf("Enter a number\n");
-    scanf("%d",&x);
-    y = x++;
-    printf("Post Increment of 1 in x is %d\n",x);
-    y = x--;
-    printf("Post Decrement 0f 1 in x is %d\n",x);
-    y = ++x;
-    printf("Pre Increment of 1 in x is %d\n",x);
-    y = --x;
-    printf("Pre Decrement 0f 1 in x is %d\n",x);
+#include <stdio.h>
+#include <stdlib.h> // For exit() function
+int main() {
+    char c[1000];
+    printf("naman\n");
+    FILE *fptr;
+    if ((fptr = fopen("program.txt", "r")) == NULL) {
+        printf("Error! File cannot be opened.");
+        // Program exits if the file pointer returns NULL.
+        exit(1);
+    }
+
+    // reads text until newline is encountered
+    fscanf(fptr, "%[^\n]", c);
+    printf("Data from the file:\n%s", c);
+    fclose(fptr);
+
     return 0;
-    
 }
