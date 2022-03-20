@@ -1,22 +1,20 @@
 #include <stdio.h>
-int main()
-{
-   int arr1[25], i,n;
-   printf("siddhant\n");
-   printf("\n\n Pointer : Store and print elements from an array :\n");    
-   printf(" Input the number of elements to store in the array :");
-   scanf("%d",&n);
-   
-   printf(" Input %d number of elements in the array :\n",n);
-   for(i=0;i<n;i++)
-      {
-	  printf(" element - %d : ",i);
-	  scanf("%d",arr1+i);
-	  }
-   printf(" The elements you entered are : \n");
-   for(i=0;i<n;i++)
-      {
-	  printf(" element - %d : %d \n",i,*(arr1+i));
-	  }
-	   return 0;
+int main() {
+    int n1, n2, max;
+    printf("naman\n");	
+    printf("Enter two positive integers: ");
+    scanf("%d %d", &n1, &n2);
+
+    // maximum number between n1 and n2 is stored in max
+    max = (n1 > n2) ? n1 : n2;
+
+    while (1) {
+        if (max % n1 == 0 && max % n2 == 0) {
+            printf("The LCM of %d and %d is %d.", n1, n2, max);
+            break;
+        }
+        ++max;
+    }
+    return 0;
 }
+Output
