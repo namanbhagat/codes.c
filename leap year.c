@@ -1,36 +1,28 @@
 #include <stdio.h>
+int main() {
+   int year;
+    printf("naman\n");
+   printf("Enter a year: ");
+   scanf("%d", &year);
 
-int ValidateTime(int hh , int mm , int ss)
-{
-    int ret=0;
-    
-    if(hh>24)   ret=1;
-    if(mm>60)   ret=1;
-    if(ss>60)   ret=1;
-    
-    return ret;
-}
+   // leap year if perfectly divisible by 400
+   if (year % 400 == 0) {
+      printf("%d is a leap year.", year);
+   }
+   // not a leap year if divisible by 100
+   // but not divisible by 400
+   else if (year % 100 == 0) {
+      printf("%d is not a leap year.", year);
+   }
+   // leap year if not divisible by 100
+   // but divisible by 4
+   else if (year % 4 == 0) {
+      printf("%d is a leap year.", year);
+   }
+   // all other years are not leap years
+   else {
+      printf("%d is not a leap year.", year);
+   }
 
-int main()
-{
-    char string[100]={0};
-
-    int ret=0,hour=0,min=0,sec=0;
-    printf("siddhant\n");
-    
-    printf("\nEnter the time in \"hh:mm:ss\" format : ");
-    fgets(string,100,stdin);
-    
-    sscanf(string , "%d:%d:%d" , &hour,&min,&sec);
-    
-    ret = ValidateTime(hour,min,sec);
-    if(ret)
-    {
-        printf("\nInvalid Time. Try Again.\n");
-    }
-    else
-    {
-        printf("\nThe Time is : %d:%d:%d\n",hour,min,sec);
-    }
-    return 0;
+   return 0;
 }
